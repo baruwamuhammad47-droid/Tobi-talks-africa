@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for African History Academy - Start your educational journey today">
+    <title>Register - African Talks Academy</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>TOBI TALKS</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="register.html" class="nav-link active">Register</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+					<li><a href="thankyou.html" class="nav-link">Thank You</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-section">
+            <div class="container">
+                <div class="register-content">
+                    <div class="register-info">
+                        <h1>Start Your African History Journey</h1>
+                        <p>Join our comprehensive educational platform and unlock the rich heritage of Africa.</p>
+                        
+                        <div class="course-details">
+                            <h3>What's Included:</h3>
+                            <ul>
+                                <li>✓ Complete video tutorial series</li>
+                                <li>✓ Downloadable study materials</li>
+                                <li>✓ Access to WhatsApp community</li>
+                                <li>✓ Interactive quizzes and assessments</li>
+                                <li>✓ Certificate of completion</li>
+                                <li>✓ Lifetime access to updates</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing">
+                            <h3>Course Fee: $7.00</h3>
+                            <p>One-time payment for lifetime access</p>
+                        </div>
+                    </div>
+
+                    <div class="register-form-container">
+                        <form id="registerForm" class="register-form"  action="https://formspree.io/f/mwpnkqjz"
+  method="POST">
+                            <h2>Register Now</h2>
+                            
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Select your country</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="Morocco">Morocco</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="Tanzania">Tanzania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <span class="error-message" id="countryError"></span>
+                            </div>
+                            <div class="payment-section">
+                                <h3>Pay Here</h3>
+                                
+                                <div class="payment-info">
+                                    <p><strong>For Nigerians - Bank Transfer:</strong></p>
+                                    <p>Bank Name: Wema Bank Nigeria</p>
+                                    <p>Account Name: Baruwa Muhammad Olohuntobi</p>
+                                    <p>Account Number: 0425675980</p>
+                                    <p>Amount: ₦11,200</p>
+                                </div>
+                                
+                                <div class="payment-info" style="margin-top: 1rem;">
+                                    <p><strong>For International Students - PayPal:</strong></p>
+                                    <p>PayPal Email: baruwamuhammad47@gmail.com </p>
+                                    <p>Amount: $7</p>
+                                </div>
+                                
+                                <div class="payment-info" style="margin-top: 1rem; background: #FFE4B5; border-left: 4px solid #FF6B35;">
+                                    <p><strong>Important Note:</strong></p>
+                                    <p>After making your payment, kindly send a screenshot of your payment to our WhatsApp or email for verification before joining the class group.</p>
+                                </div>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="whatsappGroup" name="whatsappGroup">
+                                    <span class="checkmark"></span>
+                                    Join our WhatsApp study group for discussions and updates
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the Terms of Service and Privacy Policy *
+                                </label>
+                                <span class="error-message" id="termsError"></span>
+                            </div>
+                           
+                            <!-- Hidden fields for Formspree -->
+                            <input type="hidden" name="_subject" value="New Course Registration - Tobi Talks Africa">
+                            <input type="hidden" name="_next" value="thankyou.html">
+                            <input type="hidden" name="_template" value="table">
+                            <button type="submit" class="submit-button">Complete Registration - $7</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>African History Academy</h3>
+                    <p>Empowering minds through African historical education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: baruwamuhammad30@gmail.com</p>
+					<p>Phone Number: 09125154576/08162232598</p>
+                    <p>Join our WhatsApp community for updates</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 African History Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="reg.js"></script>
+</body>
+</html>

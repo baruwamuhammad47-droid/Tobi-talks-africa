@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact African History Academy - Get in touch with our team">
+    <title>Contact Us - African Talks Academy</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>TOBI TALKS</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="register.html" class="nav-link">Register</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-header">
+                    <h1>Get in Touch</h1>
+                    <p>We're here to help you on your African history learning journey. Reach out to us with any questions or concerns.</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>baruwamuhammad30@gmail.com</p>
+                                <p>baruwamuhammad47@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>Join our community group</p>
+                                <a href="https://wa.link/hv6a8o" target="_blank" class="whatsapp-contact">
+                                    Message us on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-details">
+                                <h3>Response Time</h3>
+                                <p>We typically respond within 24 hours</p>
+                                <p>Monday - Friday: 9 AM - 6 PM GMT</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-section">
+                            <h3>Frequently Asked Questions</h3>
+                            <div class="faq-item">
+                                <h4>How long do I have access to the course?</h4>
+                                <p>You have lifetime access to all course materials and updates.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>Can I get a refund?</h4>
+                                <p>Yes, we offer a 30-day money-back guarantee if you're not satisfied.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>Is the course suitable for beginners?</h4>
+                                <p>Absolutely! Our course is designed for all levels, from beginners to advanced learners.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/mgvlezbn" method="POST">
+                            <h2>Send us a Message</h2>
+                            
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                                <span class="error-message" id="contactNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                                <span class="error-message" id="contactEmailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject *</label>
+                                <select id="contactSubject" name="contactSubject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="course-inquiry">Course Inquiry</option>
+                                    <option value="technical-support">Technical Support</option>
+                                    <option value="payment-issue">Payment Issue</option>
+                                    <option value="course-content">Course Content Question</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="contactSubjectError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Message *</label>
+                                <textarea id="contactMessage" name="contactMessage" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+                                <span class="error-message" id="contactMessageError"></span>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="contactNewsletter" name="contactNewsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for updates and African history insights
+                                </label>
+                            </div>
+                            
+                            <!-- Hidden fields for Formspree -->
+                            <input type="hidden" name="_subject" value="New Contact Message - Tobi Talks Africa">
+                            <input type="hidden" name="_template" value="table">
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+						</div>
+
+                        <div id="contactSuccess" class="success-message" style="display: none;">
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>African History Academy</h3>
+                    <p>Empowering minds through African historical education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: <a href="mailto:baruwamuhammad30@gmail.com" style="text-decoration: none; color: yellow;">baruwamuhammad30@gmail.com?</a></p>
+                    <p>Join our WhatsApp community for updates</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 African History Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="reg.js"></script>
+</body>
+</html>
